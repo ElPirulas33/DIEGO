@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Diego Patricio" content="width=device-width, initial-scale=1.0">
+    <title>ampliacion 2</title>
+    <style>
+        body {
+            justify-content: center; 
+            text-align: center;
+            align-items: center; 
+            height: 100vh;
+            color: white; 
+            font-size: 300%; 
+            background: url("lobo.jpg" );
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="prueba"></h1>
+    <script>
+        let a = ["esto es","un lobo","de las montañas"]
+        let i = 0; 
+        miF();
+
+        function miF() {
+        if (i<a.length){document.getElementById("prueba").innerHTML=a[i];
+        i++;
+        setTimeout(miF,1000); 
+        }
+        else {i=0; miF()}   } 
+    </script>
+</body>
+</html>
